@@ -24,9 +24,12 @@ namespace Mamba_Class.Controllers
             this._webHostEnvironment = webHostEnvironment;
         }
         [HttpGet]
+        [ProducesResponseType(typeof(int),StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(int),StatusCodes.Status400BadRequest)]
         public IActionResult GetAll()
         {
             var prof = _appDb.Members.ToList();
+            if (prof == null) return BadRequest();
             IEnumerable<MemberGetDto> memberGets = prof.Select(p => new MemberGetDto
             {
                 FullName = p.FullName,
@@ -40,6 +43,8 @@ namespace Mamba_Class.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
 
         public IActionResult Get(int id)
         {
@@ -50,6 +55,8 @@ namespace Mamba_Class.Controllers
             return Ok(MemberGet);
         }
         [HttpPost]
+        [ProducesResponseType(typeof(int), StatusCodes.Status201Created)]
+        [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
         public IActionResult Create([FromForm] MemberCreateDto dto)
         {
             string fileName = "";
@@ -85,8 +92,10 @@ namespace Mamba_Class.Controllers
 
             if (dto.ProfessionsIds != null)
             {
+                
                 foreach (var item in dto.ProfessionsIds)
                 {
+                    if(!_appDb.Professions.All(x=>x.Id == item)) return BadRequest();
                     MemberProfession memberProfession = new MemberProfession
                     {
                         ProfessionId = item,
@@ -101,10 +110,12 @@ namespace Mamba_Class.Controllers
 
             _appDb.Members.Add(member);
             _appDb.SaveChanges();
-            return Ok();
+            return StatusCode(201);
         }
 
         [HttpPut("{id}")]
+        [ProducesResponseType(typeof(int), StatusCodes.Status202Accepted)]
+        [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
         public IActionResult Update(int id, [FromForm]MemberUpdateDto dto)
         {
             var member = _appDb.Members.FirstOrDefault(x => x.Id == id);
@@ -142,14 +153,22 @@ namespace Mamba_Class.Controllers
                 {
                     dto.FormFile.CopyTo(fileStream);
                 }
-
-
-
-                member.ImageUrl = newFileName;
+                 member.ImageUrl = newFileName;
 
             }
 
-            
+            if (dto.ProfessionsIds != null)
+            {
+                member.MemberProfessions.RemoveAll(bt => dto.ProfessionsIds == null || !dto.ProfessionsIds.Contains(bt.ProfessionId));
+                foreach (var profId in dto.ProfessionsIds.Where(tagId => !member.MemberProfessions.Any(bt => bt.ProfessionId == tagId)))
+                {
+                    MemberProfession bookTag = new MemberProfession
+                    {
+                        ProfessionId = profId
+                    };
+                    member.MemberProfessions.Add(bookTag);
+                }
+            }
 
             _appDb.SaveChanges();
             return NoContent();
@@ -157,6 +176,7 @@ namespace Mamba_Class.Controllers
 
 
         [HttpDelete("{id}")]
+        [ProducesResponseType(typeof(int), StatusCodes.Status204NoContent)]
         public IActionResult Delete(int id)
         {
             var prof = _appDb.Members.FirstOrDefault(x => x.Id == id);

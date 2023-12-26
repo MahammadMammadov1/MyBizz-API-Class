@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\II Novbe\\Desktop\\TasksCode\\Mamba-Class\\Mamba-Class\\Mamba-Class.csproj": {}
+    "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\Mamba-Class.csproj": {}
   },
   "projects": {
-    "C:\\Users\\II Novbe\\Desktop\\TasksCode\\Mamba-Class\\Mamba-Class\\Mamba-Class.csproj": {
+    "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\Mamba-Class.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\II Novbe\\Desktop\\TasksCode\\Mamba-Class\\Mamba-Class\\Mamba-Class.csproj",
+        "projectUniqueName": "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\Mamba-Class.csproj",
         "projectName": "Mamba-Class",
-        "projectPath": "C:\\Users\\II Novbe\\Desktop\\TasksCode\\Mamba-Class\\Mamba-Class\\Mamba-Class.csproj",
-        "packagesPath": "C:\\Users\\II Novbe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\II Novbe\\Desktop\\TasksCode\\Mamba-Class\\Mamba-Class\\obj\\",
+        "projectPath": "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\Mamba-Class.csproj",
+        "packagesPath": "C:\\Users\\Mehemmed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\II Novbe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Mehemmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

@@ -20,6 +20,8 @@ namespace Mamba_Class.Controllers
             this._mapper = mapper;
         }
         [HttpGet]
+        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
+
         public IActionResult GetAll()
         {
             var prof = _appDb.Professions.ToList();
@@ -35,6 +37,8 @@ namespace Mamba_Class.Controllers
         }
 
         [HttpGet("{id}")]
+        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
 
         public IActionResult Get(int id)
         {
@@ -45,6 +49,9 @@ namespace Mamba_Class.Controllers
             return Ok(professionGet);
         }
         [HttpPost]
+        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
+
         public IActionResult Create(ProfessionCreateDto professionCreate)
         {
             if (professionCreate == null) return BadRequest("bu idli data yoxdur");
@@ -54,6 +61,8 @@ namespace Mamba_Class.Controllers
             return Ok(profession);  
         }
         [HttpDelete("{id}")]
+        [ProducesResponseType(typeof(int), StatusCodes.Status204NoContent)]
+        [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
         public IActionResult Delete(int id)
         {
             var prof = _appDb.Professions.FirstOrDefault(p => p.Id == id);
@@ -63,6 +72,8 @@ namespace Mamba_Class.Controllers
             return NoContent();
         }
         [HttpPut("{id}")]
+        [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
         public IActionResult Update(int id, ProfessionUpdateDto update)
         {
             var prof = _appDb.Professions.FirstOrDefault(p => p.Id == id);
