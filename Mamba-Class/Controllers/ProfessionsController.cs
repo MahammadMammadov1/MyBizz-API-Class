@@ -4,6 +4,7 @@ using Mamba_Class.DTOs.ProfessionDto;
 using Mamba_Class.Entites;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using MyBizz.Business.Services.Interfaces;
 
 namespace Mamba_Class.Controllers
 {
@@ -13,75 +14,57 @@ namespace Mamba_Class.Controllers
     {
         private readonly AppDbContext _appDb;
         private readonly IMapper _mapper;
+        private readonly IProfessionService _professionService;
 
-        public ProfessionsController(AppDbContext appDb ,IMapper mapper )
+        public ProfessionsController(AppDbContext appDb ,IMapper mapper ,IProfessionService professionService)
         {
             this._appDb = appDb;
             this._mapper = mapper;
+            this._professionService = professionService;
         }
         [HttpGet]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
 
-        public IActionResult GetAll()
+        public async Task<IActionResult> GetAll()
         {
-            var prof = _appDb.Professions.ToList();
-            IEnumerable<ProfessionGetDto> professionGets = prof.Select(p => new ProfessionGetDto 
-            {
-                Name = p.Name,
-                CreatedDate = p.CreatedTime,
-                UpdatedDate = p.CreatedTime,
+            List<ProfessionGetDto> prof = await _professionService.GetAllAsync();
+            return StatusCode(StatusCodes.Status200OK, prof);
 
-            });
-
-            return Ok(professionGets);
         }
 
         [HttpGet("{id}")]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
 
-        public IActionResult Get(int id)
+        public async Task<IActionResult> Get(int id)
         {
-            var prof = _appDb.Professions.FirstOrDefault(p => p.Id == id);
-            if (prof == null) return BadRequest("bu idli data yoxdur");
+            var prof =await _professionService.GetByIdAsync(id);
+            return StatusCode(StatusCodes.Status200OK, prof);
 
-            ProfessionGetDto professionGet = _mapper.Map<ProfessionGetDto>(prof);
-            return Ok(professionGet);
+
         }
         [HttpPost]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
 
-        public IActionResult Create(ProfessionCreateDto professionCreate)
+        public async Task<IActionResult> Create(ProfessionCreateDto professionCreate)
         {
-            if (professionCreate == null) return BadRequest("bu idli data yoxdur");
-            Profession profession = _mapper.Map<Profession>(professionCreate);
-            _appDb.Professions.Add(profession);
-            _appDb.SaveChanges();
-            return Ok(profession);  
+            await _professionService.CreateAsync(professionCreate);
+            return Ok();  
         }
         [HttpDelete("{id}")]
         [ProducesResponseType(typeof(int), StatusCodes.Status204NoContent)]
         [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
-            var prof = _appDb.Professions.FirstOrDefault(p => p.Id == id);
-            if (prof == null) return BadRequest("bu idli data yoxdur");  
-            _appDb.Professions.Remove(prof);
-            _appDb.SaveChanges();
+            await _professionService.Delete(id);
             return NoContent();
         }
         [HttpPut("{id}")]
         [ProducesResponseType(typeof(int), StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(int), StatusCodes.Status400BadRequest)]
-        public IActionResult Update(int id, ProfessionUpdateDto update)
+        public async Task<IActionResult> Update(int id, ProfessionUpdateDto update)
         {
-            var prof = _appDb.Professions.FirstOrDefault(p => p.Id == id);
-            if(prof == null) return BadRequest("bu idli data yoxdur");
-
-            prof = _mapper.Map(update,prof);
-            _appDb.SaveChanges();
-            return Ok(prof);
+            await _professionService.UpdateAsync(id, update);
+            return NoContent();
         }
     }
 }

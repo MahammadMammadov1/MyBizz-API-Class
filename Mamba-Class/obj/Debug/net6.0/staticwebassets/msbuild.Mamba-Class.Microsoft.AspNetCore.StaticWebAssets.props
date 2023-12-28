@@ -16,6 +16,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\11a969f3-3450-42d9-bc16-40ced0394131home-slider-2-ai.png))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\6d6f8990-26dc-4b17-8bbd-dae1d6b6eaf83ee951ccac065b9fa86521d0e76ea4d0.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Mamba-Class</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Mamba-Class</BasePath>
+      <RelativePath>Uploads/6d6f8990-26dc-4b17-8bbd-dae1d6b6eaf83ee951ccac065b9fa86521d0e76ea4d0.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\6d6f8990-26dc-4b17-8bbd-dae1d6b6eaf83ee951ccac065b9fa86521d0e76ea4d0.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\87069538-8a67-4535-8b5e-192cf6a51003promo-banner-small.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>Mamba-Class</SourceId>
@@ -47,6 +63,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\a46791e2-e726-4a01-b48d-c9b8b0d5b95ahome-slider-1-ai.png))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\ca3109bf-aae1-457a-9b0e-61c95603c19bhome-2-slider-1.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>Mamba-Class</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Mamba-Class</BasePath>
+      <RelativePath>Uploads/ca3109bf-aae1-457a-9b0e-61c95603c19bhome-2-slider-1.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\ca3109bf-aae1-457a-9b0e-61c95603c19bhome-2-slider-1.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Uploads\d47d0b0b-c0c3-4cdc-99ea-fd46dbcf6c93promo-banner-small-with-text.jpg))">
       <SourceType>Package</SourceType>

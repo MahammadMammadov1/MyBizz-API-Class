@@ -1,0 +1,14 @@
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\bin\Debug\net6.0\MyBizz.Core.deps.json
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\bin\Debug\net6.0\MyBizz.Core.dll
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\bin\Debug\net6.0\MyBizz.Core.pdb
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\MyBizz.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\MyBizz.Core.AssemblyInfoInputs.cache
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\MyBizz.Core.AssemblyInfo.cs
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\MyBizz.Core.csproj.CoreCompileInputs.cache
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\MyBizz.Core.dll
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\refint\MyBizz.Core.dll
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\MyBizz.Core.pdb
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\ref\MyBizz.Core.dll
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\MyBizz.Core.csproj.AssemblyReference.cache
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\bin\Debug\net6.0\MyBizz.Core.runtimeconfig.json
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\MyBizz.Core\obj\Debug\net6.0\MyBizz.Core.genruntimeconfig.cache

@@ -85,11 +85,9 @@ C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\AutoMapp
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\FluentValidation.dll
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
-C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
@@ -146,3 +144,11 @@ C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\obj\Debug\net6.0\refint\M
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\obj\Debug\net6.0\Mamba-Class.pdb
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\obj\Debug\net6.0\Mamba-Class.genruntimeconfig.cache
 C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\obj\Debug\net6.0\ref\Mamba-Class.dll
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\MyBizz.Business.dll
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\MyBizz.Core.dll
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\MyBizz.Data.dll
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\MyBizz.Business.pdb
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\MyBizz.Core.pdb
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\MyBizz.Data.pdb
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Humanizer.dll
+C:\Users\Mehemmed\Desktop\MyBizz-API-Class\Mamba-Class\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

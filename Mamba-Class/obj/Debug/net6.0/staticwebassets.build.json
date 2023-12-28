@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k8CCR/NRn57drw1uv9ttaVBsBv31UkOY1h/rMKZrLms=",
+  "Hash": "D+U9vgKlMz0a77+7UOlZupeFz2UEVXpym9JN6a4FdPc=",
   "Source": "Mamba-Class",
   "BasePath": "_content/Mamba-Class",
   "Mode": "Default",
@@ -32,6 +32,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\11a969f3-3450-42d9-bc16-40ced0394131home-slider-2-ai.png"
+    },
+    {
+      "Identity": "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\wwwroot\\Uploads\\6d6f8990-26dc-4b17-8bbd-dae1d6b6eaf83ee951ccac065b9fa86521d0e76ea4d0.jpeg",
+      "SourceId": "Mamba-Class",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\wwwroot\\",
+      "BasePath": "_content/Mamba-Class",
+      "RelativePath": "Uploads/6d6f8990-26dc-4b17-8bbd-dae1d6b6eaf83ee951ccac065b9fa86521d0e76ea4d0.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\6d6f8990-26dc-4b17-8bbd-dae1d6b6eaf83ee951ccac065b9fa86521d0e76ea4d0.jpeg"
     },
     {
       "Identity": "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\wwwroot\\Uploads\\87069538-8a67-4535-8b5e-192cf6a51003promo-banner-small.jpg",
@@ -66,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\a46791e2-e726-4a01-b48d-c9b8b0d5b95ahome-slider-1-ai.png"
+    },
+    {
+      "Identity": "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\wwwroot\\Uploads\\ca3109bf-aae1-457a-9b0e-61c95603c19bhome-2-slider-1.jpg",
+      "SourceId": "Mamba-Class",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\wwwroot\\",
+      "BasePath": "_content/Mamba-Class",
+      "RelativePath": "Uploads/ca3109bf-aae1-457a-9b0e-61c95603c19bhome-2-slider-1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\ca3109bf-aae1-457a-9b0e-61c95603c19bhome-2-slider-1.jpg"
     },
     {
       "Identity": "C:\\Users\\Mehemmed\\Desktop\\MyBizz-API-Class\\Mamba-Class\\wwwroot\\Uploads\\d47d0b0b-c0c3-4cdc-99ea-fd46dbcf6c93promo-banner-small-with-text.jpg",
